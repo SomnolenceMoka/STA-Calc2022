@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<mata charset="UTN-8">
+<title>電卓</title>
+<link rel ="stylesheet" href ="CSSfile.css">
+<script src="SCRIPTfile.js"></script>
+
+</head>
+
+<body>
+  <form name="dentaku">
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" class="display" name="display" value="" disabled>
+        </td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="7" onclick="myValue(7)"></td>
+        <td><input type="button" value="8" onclick="myValue(8)"></td>
+        <td><input type="button" value="9" onclick="myValue(9)"></td>
+        <td><input type="button" value="÷" class="operator" name="div_btn" onclick="myCalculate('/')"></td>
+      </tr>
+        
+      <tr>
+        <td><input type="button" value="4" onclick="myValue(4)"></td>
+        <td><input type="button" value="5" onclick="myValue(5)"></td>
+        <td><input type="button" value="6" onclick="myValue(6)"></td>
+        <td><input type="button" value="×" class="operator" name="add_btn" onclick="myCalculate('*')"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="1" onclick="myValue(1)"></td>
+        <td><input type="button" value="2" onclick="myValue(2)"></td>
+        <td><input type="button" value="3" onclick="myValue(3)"></td>
+        <td><input type="button" value="-" class="operator" onclick="myCalculate('-')"></td>
+      </tr>
+
+      <tr>
+        <td><input type="button" value="0" onclick="myValue(0)"></td>
+        <td><input type="button" value="C" onclick="myC()"></td>
+        <td><input type="button" value="=" class="equal" onclick="myCalculate('=')"></td>
+        <td><input type="button" value="+" class="operator" onclick="myCalculate('+')"></td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
